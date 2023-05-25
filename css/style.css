@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+ }
+ body{
+    font-family: 'Wix Madefor Display', sans-serif;
+ }
+ a{
+    text-decoration: none;
+    color: black;
+
+}
+header{
+     display: flex;
+     height: 90px;
+    background-color: #CCD5AE;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 80px;
+    margin-right: 20px;
+}
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+    font-size: 30px;
+}
+nav a:hover{
+    color: white;
+}
+
+ /* }
+.nav{
+   
+  
+    list-style: none;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+
+}
+.fotopino{
+    width: 170px;
+    height: 120%;
+    display: flex;
+    justify-content: left;
+
+}
+
+.sep{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.N{
+padding: 10px 20px 10px 20px  ;
+    border: 2px solid #CCD5AE;
+    display: flex;
+    color: white;
+    font-size: 20px;
+    
+} */
+
+/*
+}
+.header{
+;    grid-area: header;
+    display: grid;
+grid-template-columns: 200px repeat(5,1fr);
+}
+
+*/
+.ubicados{
+    padding-top: 20px;
+}
+footer{
+    background-color: #FAEDCD;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    width: 100px;
+} 
+@media (max-width:1000px){
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+    font-size: 18px;
+}}
