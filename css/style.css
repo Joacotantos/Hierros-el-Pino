@@ -37,19 +37,27 @@ nav a{
 nav a:hover{
     color: white;
 }
+main{
+    grid-area: main;
+    display: grid;
 
- /* }
-.nav{
-   
-  
-    list-style: none;
-    display: flex;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+.medio img{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.video iframe {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 4;
     width: 100%;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-around;
-
+}
+/*
 }
 .fotopino{
     width: 170px;
@@ -91,12 +99,27 @@ grid-template-columns: 200px repeat(5,1fr);
 }
 footer{
     background-color: #FAEDCD;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}
+footer h6 {
+    padding: 20px 0px 10px 10px;
+}
+.call{
+    display: flex;
+}
+.phone{
+    width: 20px;
+    height: 20px;
+    /* no me deja poner el phone a la misma altura que el numero */
 }
 .whatsapp{
-    position: fixed;
-    bottom: 1px;
-    right: 1px;
-    width: 100px;
+    position: absolute;
+    bottom: 3px;
+    right: 5px;
+    width: 80px;
 } 
 @media (max-width:1000px){
 nav a{
