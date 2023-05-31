@@ -45,13 +45,7 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     /* flex-direction: column; */
-
 }
-/* .medioindex{
-    grid-area: main;
-    display: flex;
-    justify-content: space-between;
-} */
 .imgfrase{
     grid-area: main;
     display: flex;
@@ -147,82 +141,28 @@ grid-template-areas:
     padding: 5px 5px 5px 5px;
 }
 .imgoficina{
-    width: 20%;
+    width: 50%;
 }
 .historia1{
     display: flex;
     margin-bottom: 20px;
+    align-items: center;
 }
 .historia2{
     display: flex;
+    align-items: center;
 }
 .imglocal{
     width: 50%;
 }
-@media (max-width:320){   /*vista mobile */
-    .imgfrase{
-        grid-area: main;
-        display: flex;
-flex-direction: column;
-        width: 50%;
-    }
-    .objetivofrase{
-        font-weight: 80;
-        font-size: 30px;
-}
-header{
-    display: flex;
-    height: 100%;
-flex-direction: column;
-}
-.video1{
-    margin-top: 15px;
-    width: 70%;
-    height: 400px;
-    } 
-    .gridcontainer{
-        display: grid;
-        grid-template-rows: 10vh 1000vh 30vh 10vh;
-    grid-template-areas: 
-    "header"
-    "main"
-    "section"
-    "footer";
-    }
-    .whatsapp{
-        bottom: 3px;
-        right: 5px;
-        width: 10px;
-    } 
-}
-@media (max-width:768px){
-    .video1{
-        margin-top: 15px;
-        width: 70%;
-        height: 400px;
-        } 
-        .imgfrase{
-            width: 100%;
-        }
-        .objetivobeto{
-            margin-top: 500px;
-        }
-        .video2{
-                width: 100%;
-            }
-            .logo img{
-                height: 80px;
-            }
+.cuento2{
+    padding-left: 5px;
 }
 
 
-@media (max-width:1000px){
-nav a{
-    font-weight: 600;
-    padding-right: 20px;
-    font-size: 18px;
-}
-}
+
+
+
 @media (max-width:1235px){
     .audioobjetivo{
         border: 4px solid rgb(0, 0, 0);
@@ -265,4 +205,116 @@ grid-template-areas:
        margin-bottom: 50px;
         width: 100%;
         } 
+}
+
+@media (max-width:1000px){
+    nav a{
+        font-weight: 600;
+        padding-right: 20px;
+        font-size: 18px;
+    }
+    }
+
+
+
+@media (max-width:768px){  /*vista tablet*/
+    .video1{
+        margin-top: 15px;
+        width: 100%;
+        height: 400px;
+        margin-right: 5px;
+        margin-left: 5px;
+        } 
+        .imgfrase{
+            width: 100%;
+        }
+        .objetivobeto{
+            margin-top: 500px;
+        }
+        .video2{
+                width: 100%;
+            }
+            .logo img{
+                height: 80px;
+            }
+        
+        /*historia*/
+        .historia1{
+            flex-direction: column;
+        }
+        .historia2{
+            flex-direction: column-reverse;
+        }
+        .imgoficina{
+            width: 70%;
+            margin-top: 10px;
+        }
+        .imglocal{
+            width: 70%;
+            margin-top: 10px;
+        }
+
+        }
+
+@media (max-width:320px){   /*vista mobile s*/
+    .imgfrase{
+flex-direction: column;
+width: 100%;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .objetivofrase{
+        font-weight: 80;
+        font-size: 30px;
+}
+header{
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+.objetivobeto{
+    width: 20%;
+    height: 20%;
+    margin-top: 10px;
+}
+.video1{
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    } 
+    .gridcontainer{
+        display: grid;
+        grid-template-rows: 20vh 85vh 30vh 10vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "section"
+    "footer";
+    }
+    .whatsapp{
+        bottom: 3px;
+        right: 5px;
+        width: 16%;
+    } 
+    nav a{
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    .berazategui{
+        font-size: 22px;
+    }
+    /*historia */
+    .grid1{
+        display: grid;
+        grid-template-rows: 20vh 80vh 10vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    }
+
 }
