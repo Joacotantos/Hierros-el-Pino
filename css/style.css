@@ -29,7 +29,7 @@ header{
     display: flex;
 }
 .logo img{
-    height: 80px;
+    height: 100px;
     margin-right: 20px;
 }
 nav a{
@@ -55,6 +55,7 @@ nav a:hover{
     grid-area: main;
     display: flex;
     justify-content: space-between;
+    width: 50%;
 }
 .objetivobeto{
     width: 20%;
@@ -102,6 +103,9 @@ margin-top: 100px;
 border: 1px solid greenyellow;
 width: 100%;
 } 
+.video2{
+    width: 50%;
+}
 .gridcontainer{
     display: grid;
     grid-template-rows: 10vh 60vh 20vh 10vh;
@@ -111,14 +115,7 @@ grid-template-areas:
 "section"
 "footer";
 }
-.grid1{
-    display: grid;
-    grid-template-rows: 10vh 80vh 10vh;
-grid-template-areas: 
-"header"
-"main"
-"footer";
-}
+
 .ubicados{
     padding-top: 20px;
 }
@@ -139,6 +136,60 @@ footer h6 {
     right: 5px;
     width: 80px;
 } 
+/* aca ya es la pagina "Historia"  */
+.mainhistoria{
+    grid-area: main;
+}
+.grid1{
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+grid-template-areas: 
+"header"
+"main"
+"footer";
+}
+@media (max-width:320){
+    .imgfrase{
+        grid-area: main;
+        display: flex;
+flex-direction: column;
+        width: 50%;
+    }
+    .objetivofrase{
+        font-weight: 80;
+        font-size: 30px;
+}
+header{
+    display: flex;
+    height: 100%;
+flex-direction: column;
+}
+.video1{
+    margin-top: 15px;
+    width: 70%;
+    height: 400px;
+    } 
+}
+@media (max-width:768px){
+    .video1{
+        margin-top: 15px;
+        width: 70%;
+        height: 400px;
+        } 
+        .imgfrase{
+            width: 100%;
+        }
+        .objetivobeto{
+            margin-top: 500px;
+        }
+        .video2{
+                width: 100%;
+            }
+            .logo img{
+                height: 80px;
+            }
+}
+
 
 @media (max-width:1000px){
 nav a{
@@ -170,8 +221,11 @@ nav a{
     }
 .medioindex{
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
+}
+.video2{
+    align-items: center;
 }
 .gridcontainer{
     display: grid;
@@ -183,7 +237,7 @@ grid-template-areas:
 "footer";
 }
 .video1{
-        margin-top: 1px;
-        width: 150%;
+       margin-bottom: 50px;
+        width: 100%;
         } 
 }
