@@ -1,0 +1,25 @@
+.mainhistoria{
+    grid-area: main;
+    margin: 10px 5px 10px 5px;
+    border: solid green 5px;
+    padding: 5px 5px 5px 5px;
+    .historia1{
+        display: flex;
+        margin-bottom: 20px;
+        align-items: center;
+        .imglocal{
+            width: 50%;
+        }
+    }
+    .historia2{
+        display: flex;
+        align-items: center;
+        .imgoficina{
+            width: 50%;
+        }
+        .cuento2{
+            padding-left: 5px;
+        }
+        
+    }
+}

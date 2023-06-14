@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    height: 100%;
+    background-color: $color-header;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(0, 0, 0);
+    grid-area: header;
+    .logo{
+        display: flex;
+        img{
+            height: 100px;
+            margin-right: 20px;
+        }
+    }
+    nav{
+        ul{
+            a{
+                font-weight: 600;
+                padding-right: 20px;
+                font-size: 30px;
+                &:hoover{
+                color: white;
+            }
+        }
+    }
+}
+}
