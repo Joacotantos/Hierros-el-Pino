@@ -1,0 +1,37 @@
+@media (max-width:768px){  /*vista tablet*/
+    .logo img{
+        height: 80px;
+    }
+        .imgfrase{
+            width: 100%;
+            .objetivobeto{
+                margin-top: 500px;
+            }
+        }
+        .video2{
+                width: 100%;
+                .video1{
+                    margin-top: 15px;
+                    width: 100%;
+                    height: 400px;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                    }
+            }
+        
+        /*historia*/
+        .historia1{
+            flex-direction: column;
+            .imglocal{
+                width: 70%;
+                margin-top: 10px;
+            }    
+        }
+        .historia2{
+            flex-direction: column-reverse;
+            .imgoficina{
+                width: 70%;
+                margin-top: 10px;
+            }
+        }
+    }

@@ -158,3 +158,81 @@ footer {
   .video1 {
     margin-bottom: 50px;
     width: 100%; } }
+
+@media (max-width: 1000px) {
+  nav a {
+    font-weight: 600;
+    padding-right: 20px;
+    font-size: 18px; } }
+
+@media (max-width: 768px) {
+  /*vista tablet*/
+  .logo img {
+    height: 80px; }
+  .imgfrase {
+    width: 100%; }
+    .imgfrase .objetivobeto {
+      margin-top: 500px; }
+  .video2 {
+    width: 100%; }
+    .video2 .video1 {
+      margin-top: 15px;
+      width: 100%;
+      height: 400px;
+      margin-right: 5px;
+      margin-left: 5px; }
+  /*historia*/
+  .historia1 {
+    flex-direction: column; }
+    .historia1 .imglocal {
+      width: 70%;
+      margin-top: 10px; }
+  .historia2 {
+    flex-direction: column-reverse; }
+    .historia2 .imgoficina {
+      width: 70%;
+      margin-top: 10px; } }
+
+@media (max-width: 320px) {
+  /*vista mobile s*/
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header nav ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      header nav ul a {
+        padding-top: 3px;
+        padding-bottom: 3px; }
+  .imgfrase {
+    flex-direction: column;
+    width: 100%;
+    align-items: center; }
+    .imgfrase .objetivobeto {
+      width: 20%;
+      height: 20%;
+      margin-top: 10px; }
+    .imgfrase .objetivofrase {
+      font-weight: 80;
+      font-size: 30px; }
+  .video1 {
+    margin-top: 5px;
+    width: 100%;
+    margin-bottom: 10px; }
+  .gridcontainer {
+    display: grid;
+    grid-template-rows: 20vh 85vh 30vh 10vh;
+    grid-template-areas: "header" "main" "section" "footer"; }
+  .whatsapp {
+    bottom: 3px;
+    right: 5px;
+    width: 16%; }
+  .berazategui {
+    font-size: 22px; }
+  /*historia */
+  .grid1 {
+    display: grid;
+    grid-template-rows: 20vh 80vh 10vh;
+    grid-template-areas: "header" "main" "footer"; } }

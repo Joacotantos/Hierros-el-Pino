@@ -208,17 +208,17 @@ grid-template-areas:
         } 
 } */
 
-@media (max-width:1000px){
+/* @media (max-width:1000px){
     nav a{
         font-weight: 600;
         padding-right: 20px;
         font-size: 18px;
     }
-    }
+    } */
 
 
 
-@media (max-width:768px){  /*vista tablet*/
+/* @media (max-width:768px){  /*vista tablet*//*
     .video1{
         margin-top: 15px;
         width: 100%;
@@ -239,7 +239,7 @@ grid-template-areas:
                 height: 80px;
             }
         
-        /*historia*/
+        /*historia*/ /*
         .historia1{
             flex-direction: column;
         }
@@ -253,12 +253,11 @@ grid-template-areas:
         .imglocal{
             width: 70%;
             margin-top: 10px;
-        }
+*/
+        
 
-        }
-
-@media (max-width:320px){   /*vista mobile s*/
-    .imgfrase{
+/* @media (max-width:320px){   /*vista mobile s*/
+  /*  .imgfrase{
 flex-direction: column;
 width: 100%;
         align-items: center;
@@ -308,7 +307,7 @@ align-items: center;
     .berazategui{
         font-size: 22px;
     }
-    /*historia */
+    /*historia */ /*
     .grid1{
         display: grid;
         grid-template-rows: 20vh 80vh 10vh;
@@ -318,7 +317,7 @@ align-items: center;
     "footer";
     }
 
-}
+ */
 
 
 /* header{
