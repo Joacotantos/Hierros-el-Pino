@@ -94,6 +94,26 @@ header {
     .mainhistoria .historia2 .cuento2 {
       padding-left: 5px; }
 
+.mainservicios {
+  grid-area: main;
+  margin: 10px 5px 10px 5px;
+  border: solid green 5px;
+  padding: 5px 5px 5px 5px;
+  grid-area: main; }
+  .mainservicios h2 {
+    font-size: 40px;
+    text-align: center; }
+  .mainservicios .domicilio {
+    text-align: center; }
+    .mainservicios .domicilio h3 {
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center; }
+    .mainservicios .domicilio p {
+      font-size: 15px;
+      margin-bottom: 10px; }
+
 footer {
   background-color: #FAEDCD;
   bottom: 0;
@@ -123,6 +143,11 @@ footer {
   grid-template-areas: "header" "main" "section" "footer"; }
 
 .grid1 {
+  display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas: "header" "main" "footer"; }
+
+.grid2 {
   display: grid;
   grid-template-rows: 10vh 80vh 10vh;
   grid-template-areas: "header" "main" "footer"; }
@@ -193,6 +218,12 @@ footer {
       width: 70%;
       margin-top: 10px; } }
 
+.grid2 {
+  grid-template-rows: 10vh 90vh 10vh; }
+
+.video3 {
+  width: 90%; }
+
 @media (max-width: 320px) {
   /*vista mobile s*/
   header {
@@ -235,4 +266,9 @@ footer {
   .grid1 {
     display: grid;
     grid-template-rows: 20vh 80vh 10vh;
-    grid-template-areas: "header" "main" "footer"; } }
+    grid-template-areas: "header" "main" "footer"; }
+  .video3 {
+    width: 350px;
+    height: 350px; }
+  .grid2 {
+    grid-template-rows: 30vh 90vh 10vh; } }

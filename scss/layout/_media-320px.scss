@@ -14,8 +14,8 @@
     }
     }
     .imgfrase{
-flex-direction: column;
-width: 100%;
+    flex-direction: column;
+    width: 100%;
         align-items: center;
         .objetivobeto{
             width: 20%;
@@ -58,4 +58,12 @@ width: 100%;
     "main"
     "footer";
     }
+    .video3{
+        width: 350px;
+        height: 350px;
+    }
+    .grid2{
+        grid-template-rows: 30vh 90vh 10vh;
+    }
 }
+
