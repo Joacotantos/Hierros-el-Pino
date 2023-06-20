@@ -51,12 +51,20 @@
     }
     /*historia */
     .grid1{
-        display: grid;
-        grid-template-rows: 20vh 80vh 10vh;
-    grid-template-areas: 
-    "header"
-    "main"
-    "footer";
+        grid-template-rows: 30vh 60vh 10vh;
+        .mainhistoria{
+            padding-top: 10px;
+            .historia1{
+                .imglocal{
+                    width: 70%;
+                }
+            }
+            .historia2{
+                .imgoficina{
+                    width: 70%;
+                }
+            }
+        }
     }
     .video3{
         width: 350px;
@@ -64,6 +72,11 @@
     }
     .grid2{
         grid-template-rows: 30vh 90vh 10vh;
+    }
+    .grid3{
+
+        grid-template-rows: 30vh 80vh 10vh;
+        
     }
 }
 

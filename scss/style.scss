@@ -1,10 +1,11 @@
 @import"./utilities/_variables";
-// @import"/utilities/mixins";
+@import"/utilities/mixins";
 @import"./base/_reset";
 @import"./layout/_header";
 @import"./layout/_main-index";
 @import"./layout/_main-historia";
 @import"./layout/_main-servicios";
+@import"./layout/_main-contacto";
 @import"./layout/_footer";
 @import"./layout/_media-1235px";
 @import"./layout/_media-1000px";

@@ -114,6 +114,23 @@ header {
       font-size: 15px;
       margin-bottom: 10px; }
 
+.maincontacto {
+  grid-area: main;
+  margin: 10px 5px 10px 5px;
+  border: solid green 5px;
+  padding: 5px 5px 5px 5px; }
+  .maincontacto .atencion {
+    text-align: center;
+    margin-top: 10px; }
+    .maincontacto .atencion iframe {
+      width: 100%; }
+    .maincontacto .atencion h2 {
+      font-size: 60px;
+      padding-top: 20px; }
+    .maincontacto .atencion ul li {
+      font-size: 30px;
+      padding-top: 5px; }
+
 footer {
   background-color: #FAEDCD;
   bottom: 0;
@@ -148,6 +165,11 @@ footer {
   grid-template-areas: "header" "main" "footer"; }
 
 .grid2 {
+  display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas: "header" "main" "footer"; }
+
+.grid3 {
   display: grid;
   grid-template-rows: 10vh 80vh 10vh;
   grid-template-areas: "header" "main" "footer"; }
@@ -216,13 +238,15 @@ footer {
     flex-direction: column-reverse; }
     .historia2 .imgoficina {
       width: 70%;
-      margin-top: 10px; } }
-
-.grid2 {
-  grid-template-rows: 10vh 90vh 10vh; }
-
-.video3 {
-  width: 90%; }
+      margin-top: 10px; }
+  .grid2 {
+    grid-template-rows: 10vh 90vh 10vh; }
+  .video3 {
+    width: 90%; }
+  .maincontacto .atencion h2 {
+    font-size: 40px; }
+  .maincontacto .atencion ul li {
+    font-size: 20px; } }
 
 @media (max-width: 320px) {
   /*vista mobile s*/
@@ -264,11 +288,17 @@ footer {
     font-size: 22px; }
   /*historia */
   .grid1 {
-    display: grid;
-    grid-template-rows: 20vh 80vh 10vh;
-    grid-template-areas: "header" "main" "footer"; }
+    grid-template-rows: 30vh 60vh 10vh; }
+    .grid1 .mainhistoria {
+      padding-top: 10px; }
+      .grid1 .mainhistoria .historia1 .imglocal {
+        width: 70%; }
+      .grid1 .mainhistoria .historia2 .imgoficina {
+        width: 70%; }
   .video3 {
     width: 350px;
     height: 350px; }
   .grid2 {
-    grid-template-rows: 30vh 90vh 10vh; } }
+    grid-template-rows: 30vh 90vh 10vh; }
+  .grid3 {
+    grid-template-rows: 30vh 80vh 10vh; } }
