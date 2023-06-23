@@ -1,4 +1,4 @@
-@media (max-width:320px){   /*vista mobile s*/
+@media (max-width:574px){   /*vista mobile s*/
     header{
         display: flex;
     flex-direction: column;
@@ -41,11 +41,14 @@
     "section"
     "footer";
     }
-    .whatsapp{
+
+    img.whatsapp{
         bottom: 3px;
         right: 5px;
-        width: 16%;
+        width: 50px;
+        height: 50px;
     } 
+
     .berazategui{
         font-size: 22px;
     }
@@ -74,9 +77,10 @@
         grid-template-rows: 30vh 90vh 10vh;
     }
     .grid3{
-
         grid-template-rows: 30vh 80vh 10vh;
-        
+    }
+    .grid4{
+        grid-template-rows: 30vh 110vh 10vh;
     }
 }
 

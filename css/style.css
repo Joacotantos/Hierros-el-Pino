@@ -10,11 +10,15 @@ html {
 
 body {
   font-family: 'Wix Madefor Display', sans-serif;
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: black; }
 
 a {
   text-decoration: none;
   color: black; }
+
+li {
+  text-decoration: none; }
 
 header {
   display: flex;
@@ -40,6 +44,7 @@ header {
   grid-area: main;
   display: flex;
   justify-content: space-between;
+  background-color: white;
   /* flex-direction: column; */ }
   .medioindex .imgfrase {
     grid-area: main;
@@ -79,7 +84,8 @@ header {
   grid-area: main;
   margin: 10px 5px 10px 5px;
   border: solid green 5px;
-  padding: 5px 5px 5px 5px; }
+  padding: 5px 5px 5px 5px;
+  background-color: #fefae0; }
   .mainhistoria .historia1 {
     display: flex;
     margin-bottom: 20px;
@@ -99,6 +105,7 @@ header {
   margin: 10px 5px 10px 5px;
   border: solid green 5px;
   padding: 5px 5px 5px 5px;
+  background-color: #fefae0;
   grid-area: main; }
   .mainservicios h2 {
     font-size: 40px;
@@ -114,11 +121,44 @@ header {
       font-size: 15px;
       margin-bottom: 10px; }
 
+.mainproducto {
+  grid-area: main;
+  margin: 10px 5px 10px 5px;
+  border: solid green 5px;
+  padding: 5px 5px 5px 5px;
+  background-color: #fefae0;
+  text-align: center; }
+  .mainproducto .sectionmusica {
+    font-size: 30px;
+    border: solid black 3px;
+    padding: 5px; }
+    .mainproducto .sectionmusica p {
+      padding-bottom: 5px;
+      font-family: 'Caprasimo', cursive; }
+  .mainproducto .sectionproductos h2 {
+    font-size: 40px;
+    font-family: 'Caprasimo', cursive; }
+  .mainproducto .sectionproductos ul h3 {
+    font-size: 30px;
+    font-family: 'Caprasimo', cursive;
+    padding-top: 10px; }
+  .mainproducto .sectionproductos ul li {
+    font-size: 20px; }
+  .mainproducto .formulario {
+    padding-top: 10px;
+    margin-left: 400px;
+    margin-right: 400px;
+    justify-content: center; }
+    .mainproducto .formulario form fieldset {
+      display: flex;
+      flex-direction: column; }
+
 .maincontacto {
   grid-area: main;
   margin: 10px 5px 10px 5px;
   border: solid green 5px;
-  padding: 5px 5px 5px 5px; }
+  padding: 5px 5px 5px 5px;
+  background-color: #fefae0; }
   .maincontacto .atencion {
     text-align: center;
     margin-top: 10px; }
@@ -174,13 +214,20 @@ footer {
   grid-template-rows: 10vh 80vh 10vh;
   grid-template-areas: "header" "main" "footer"; }
 
+.grid4 {
+  display: grid;
+  grid-template-rows: 10vh 100vh 10vh;
+  grid-template-areas: "header" "main" "footer"; }
+
 @media (max-width: 1235px) {
+  header nav ul a {
+    font-size: 25px; }
   .audioobjetivo {
     border: 4px solid black;
     margin-top: 30px;
     margin-bottom: 100px;
     margin-right: 10px;
-    padding: 5px 5px 5px 5px; }
+    padding-left: 30px; }
     .audioobjetivo .objetivofrase {
       font-weight: 80;
       font-size: 40px;
@@ -194,28 +241,28 @@ footer {
     color: white; }
   .medioindex {
     flex-direction: column;
-    /* align-items: center; */
     width: 100%; }
   .video2 {
     align-items: center; }
   .gridcontainer {
-    display: grid;
-    grid-template-rows: 10vh 90vh 20vh 10vh;
-    grid-template-areas: "header" "main" "section" "footer"; }
+    grid-template-rows: 10vh 130vh 20vh 10vh; }
   .video1 {
     margin-bottom: 50px;
-    width: 100%; } }
+    width: 200%; } }
 
 @media (max-width: 1000px) {
-  nav a {
-    font-weight: 600;
-    padding-right: 20px;
-    font-size: 18px; } }
+  img.whatsapp {
+    width: 60px;
+    height: 60px; }
+  .formulario {
+    padding-top: 10px;
+    margin-left: 300px;
+    margin-right: 300px; }
+    .formulario .grid4 {
+      grid-template-rows: 10vh 110vh 10vh; } }
 
 @media (max-width: 768px) {
   /*vista tablet*/
-  .logo img {
-    height: 80px; }
   .imgfrase {
     width: 100%; }
     .imgfrase .objetivobeto {
@@ -246,9 +293,16 @@ footer {
   .maincontacto .atencion h2 {
     font-size: 40px; }
   .maincontacto .atencion ul li {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .sectionproductos h2 {
+    font-size: 30px; }
+  .sectionproductos ul h3 {
+    font-size: 25px;
+    padding-top: 10px; }
+  .sectionproductos ul li {
+    font-size: 17px; } }
 
-@media (max-width: 320px) {
+@media (max-width: 574px) {
   /*vista mobile s*/
   header {
     display: flex;
@@ -280,10 +334,11 @@ footer {
     display: grid;
     grid-template-rows: 20vh 85vh 30vh 10vh;
     grid-template-areas: "header" "main" "section" "footer"; }
-  .whatsapp {
+  img.whatsapp {
     bottom: 3px;
     right: 5px;
-    width: 16%; }
+    width: 50px;
+    height: 50px; }
   .berazategui {
     font-size: 22px; }
   /*historia */
@@ -301,4 +356,6 @@ footer {
   .grid2 {
     grid-template-rows: 30vh 90vh 10vh; }
   .grid3 {
-    grid-template-rows: 30vh 80vh 10vh; } }
+    grid-template-rows: 30vh 80vh 10vh; }
+  .grid4 {
+    grid-template-rows: 30vh 110vh 10vh; } }

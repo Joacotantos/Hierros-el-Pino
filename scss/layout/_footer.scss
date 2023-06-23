@@ -47,3 +47,11 @@ grid-template-areas:
 .grid3{
 @include grid
 }
+.grid4{
+    display: grid;
+    grid-template-rows: 10vh 100vh 10vh;
+grid-template-areas: 
+"header"
+"main"
+"footer";
+    }

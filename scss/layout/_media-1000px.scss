@@ -1,7 +1,23 @@
 @media (max-width:1000px){
-    nav a{
-        font-weight: 600;
-        padding-right: 20px;
-        font-size: 18px;
+    // nav a{
+    //     font-weight: 600;
+    //     padding-right: 20px;
+    //     font-size: 18px;
+    // }
+    // .logo img{
+    //     width: 200px;
+
+    // }
+    img.whatsapp{
+        width: 60px;
+        height: 60px;
+    } 
+    .formulario{
+        padding-top: 10px;
+        margin-left: 300px;
+        margin-right: 300px;
+    .grid4{
+        grid-template-rows: 10vh 110vh 10vh;
     }
     }
+}

@@ -1,7 +1,5 @@
 @media (max-width:768px){  /*vista tablet*/
-    .logo img{
-        height: 80px;
-    }
+
         .imgfrase{
             width: 100%;
             .objetivobeto{
@@ -51,4 +49,19 @@
         }
     }
     }
+    .sectionproductos{
+        h2{
+            font-size: 30px;
+            
+        }
+        ul{
+            h3{
+                font-size: 25px;
+                padding-top: 10px;
+            }
+        li{
+        font-size: 17px;
+        }
+            }
+        }
 }

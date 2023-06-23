@@ -1,7 +1,8 @@
 .medioindex {
     grid-area: main;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    background-color: white;
     /* flex-direction: column; */
     .imgfrase{
         grid-area: main;
