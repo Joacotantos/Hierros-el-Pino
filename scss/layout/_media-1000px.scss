@@ -1,23 +1,39 @@
 @media (max-width:1000px){
-    // nav a{
-    //     font-weight: 600;
-    //     padding-right: 20px;
-    //     font-size: 18px;
-    // }
-    // .logo img{
-    //     width: 200px;
-
-    // }
-    img.whatsapp{
+ img.whatsapp{
         width: 60px;
         height: 60px;
     } 
+        .sectionproductos{
+    h2{
+        margin-bottom: 10px;
+        
+    }
+    ul{
+        h3{
+            font-size: 30px;
+            font-family: 'Caprasimo', cursive; 
+            padding-top: 10px;
+        }
+    li{
+    font-size: 20px;
+    }
+        }
+    }
     .formulario{
         padding-top: 10px;
-        margin-left: 300px;
-        margin-right: 300px;
-    .grid4{
-        grid-template-rows: 10vh 110vh 10vh;
+    justify-content: center;
+    form {
+    fieldset{
+        legend{
+            font-size: 15px;
+        }
+        label{
+            font-size: 15px;
+        }
     }
+    }
+     .grid4{
+         grid-template-rows: 10vh 80vh 10vh;
+     }
     }
 }

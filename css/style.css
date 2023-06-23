@@ -146,8 +146,6 @@ header {
     font-size: 20px; }
   .mainproducto .formulario {
     padding-top: 10px;
-    margin-left: 400px;
-    margin-right: 400px;
     justify-content: center; }
     .mainproducto .formulario form fieldset {
       display: flex;
@@ -173,8 +171,6 @@ header {
 
 footer {
   background-color: #FAEDCD;
-  bottom: 0;
-  width: 100%;
   height: 15vh;
   font-size: 20px;
   grid-area: footer; }
@@ -201,25 +197,25 @@ footer {
 
 .grid1 {
   display: grid;
-  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-rows: 9vh 80vh 10vh;
   grid-template-areas: "header" "main" "footer"; }
 
 .grid2 {
   display: grid;
-  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-rows: 9vh 80vh 10vh;
   grid-template-areas: "header" "main" "footer"; }
 
 .grid3 {
   display: grid;
-  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-rows: 9vh 80vh 10vh;
   grid-template-areas: "header" "main" "footer"; }
 
 .grid4 {
   display: grid;
-  grid-template-rows: 10vh 100vh 10vh;
+  grid-template-rows: 9vh 100vh 10vh;
   grid-template-areas: "header" "main" "footer"; }
 
-@media (max-width: 1235px) {
+@media (max-width: 1264px) {
   header nav ul a {
     font-size: 25px; }
   .audioobjetivo {
@@ -254,12 +250,23 @@ footer {
   img.whatsapp {
     width: 60px;
     height: 60px; }
+  .sectionproductos h2 {
+    margin-bottom: 10px; }
+  .sectionproductos ul h3 {
+    font-size: 30px;
+    font-family: 'Caprasimo', cursive;
+    padding-top: 10px; }
+  .sectionproductos ul li {
+    font-size: 20px; }
   .formulario {
     padding-top: 10px;
-    margin-left: 300px;
-    margin-right: 300px; }
+    justify-content: center; }
+    .formulario form fieldset legend {
+      font-size: 15px; }
+    .formulario form fieldset label {
+      font-size: 15px; }
     .formulario .grid4 {
-      grid-template-rows: 10vh 110vh 10vh; } }
+      grid-template-rows: 10vh 80vh 10vh; } }
 
 @media (max-width: 768px) {
   /*vista tablet*/
@@ -359,3 +366,7 @@ footer {
     grid-template-rows: 30vh 80vh 10vh; }
   .grid4 {
     grid-template-rows: 30vh 110vh 10vh; } }
+
+@media (max-width: 400px) {
+  .grid4 {
+    grid-template-rows: 30vh 135vh 10vh; } }

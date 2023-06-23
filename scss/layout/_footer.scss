@@ -1,7 +1,5 @@
     footer{
         background-color: #FAEDCD;
-        bottom: 0;
-        width: 100%;
         height: 15vh;
         font-size: 20px;
         grid-area: footer;
@@ -49,7 +47,7 @@ grid-template-areas:
 }
 .grid4{
     display: grid;
-    grid-template-rows: 10vh 100vh 10vh;
+    grid-template-rows: 9vh 100vh 10vh;
 grid-template-areas: 
 "header"
 "main"
