@@ -42,34 +42,34 @@ header {
 
 .medioindex {
   grid-area: main;
+  margin: 10px 5px 10px 5px;
+  border: solid green 5px;
+  padding: 5px 5px 5px 5px;
   display: flex;
-  justify-content: space-between;
   background-color: white;
-  /* flex-direction: column; */ }
+  flex-direction: column;
+  align-items: center; }
   .medioindex .imgfrase {
-    grid-area: main;
     display: flex;
-    justify-content: space-between;
-    width: 50%; }
-    .medioindex .imgfrase .objetivobeto {
-      width: 20%;
-      height: 20%;
-      margin-top: 550px; }
+    flex-direction: column;
+    align-items: center; }
     .medioindex .imgfrase .audioobjetivo {
       border: 4px solid black;
-      margin-top: 30px;
-      margin-bottom: 100px;
-      margin-right: 10px;
-      padding: 5px 5px 5px 5px; }
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 5px 5px 5px 5px;
+      width: 50%;
+      background-color: #fefae0; }
       .medioindex .imgfrase .audioobjetivo .objetivofrase {
         font-weight: 100;
         font-size: 50px;
         /* font-family: 'Dancing Script', cursive;  no funciona el cursive a pesar de sacarlo de google*/ }
   .medioindex .video2 {
-    width: 50%; }
+    width: 70%; }
     .medioindex .video2 .video1 {
-      margin-top: 25px;
-      border: 1px solid greenyellow;
+      margin-top: 35px;
+      padding: 3px;
+      border: 5px solid black;
       width: 100%; }
 
 .berazategui {
@@ -192,7 +192,7 @@ footer {
 
 .gridcontainer {
   display: grid;
-  grid-template-rows: 10vh 60vh 20vh 10vh;
+  grid-template-rows: 10vh 120vh 20vh 10vh;
   grid-template-areas: "header" "main" "section" "footer"; }
 
 .grid1 {
@@ -215,65 +215,54 @@ footer {
   grid-template-rows: 9vh 100vh 10vh;
   grid-template-areas: "header" "main" "footer"; }
 
-@media (max-width: 1264px) {
+@media (max-width: 1235px) {
   header nav ul a {
     font-size: 25px; }
   .audioobjetivo {
-    border: 4px solid black;
-    margin-top: 30px;
-    margin-bottom: 100px;
-    margin-right: 10px;
-    padding-left: 30px; }
+    width: 70%; }
     .audioobjetivo .objetivofrase {
       font-weight: 80;
       font-size: 40px;
       /* font-family: 'Dancing Script', cursive;  no funciona el cursive a pesar de sacarlo de google*/ }
   .berazategui {
-    grid-area: section;
-    background-color: #4f7e4f;
-    font-size: 30px;
-    padding-left: 20px;
-    padding-top: 10px;
-    color: white; }
-  .medioindex {
-    flex-direction: column;
-    width: 100%; }
-  .video2 {
-    align-items: center; }
+    font-size: 30px; }
   .gridcontainer {
-    grid-template-rows: 10vh 130vh 20vh 10vh; }
-  .video1 {
-    margin-bottom: 50px;
-    width: 200%; } }
+    grid-template-rows: 10vh 140vh 20vh 10vh; } }
 
 @media (max-width: 1000px) {
-  img.whatsapp {
-    width: 60px;
-    height: 60px; }
-  .sectionproductos h2 {
+  .audioobjetivo {
+    margin-top: 10px;
     margin-bottom: 10px; }
-  .sectionproductos ul h3 {
-    font-size: 30px;
-    font-family: 'Caprasimo', cursive;
-    padding-top: 10px; }
-  .sectionproductos ul li {
-    font-size: 20px; }
-  .formulario {
-    padding-top: 10px;
-    justify-content: center; }
-    .formulario form fieldset legend {
-      font-size: 15px; }
-    .formulario form fieldset label {
-      font-size: 15px; }
-    .formulario .grid4 {
-      grid-template-rows: 10vh 80vh 10vh; } }
+    .audioobjetivo .objetivofrase {
+      font-size: 10px;
+      /* font-family: 'Dancing Script', cursive;  no funciona el cursive a pesar de sacarlo de google*/ }
+    .audioobjetivo img.whatsapp {
+      width: 60px;
+      height: 60px; }
+    .audioobjetivo .sectionproductos h2 {
+      margin-bottom: 10px; }
+    .audioobjetivo .sectionproductos ul h3 {
+      font-size: 30px;
+      font-family: 'Caprasimo', cursive;
+      padding-top: 10px; }
+    .audioobjetivo .sectionproductos ul li {
+      font-size: 20px; }
+    .audioobjetivo .formulario {
+      padding-top: 10px;
+      justify-content: center; }
+      .audioobjetivo .formulario form fieldset legend {
+        font-size: 15px; }
+      .audioobjetivo .formulario form fieldset label {
+        font-size: 15px; }
+      .audioobjetivo .formulario .grid4 {
+        grid-template-rows: 10vh 80vh 10vh; } }
 
 @media (max-width: 768px) {
   /*vista tablet*/
   .imgfrase {
     width: 100%; }
     .imgfrase .objetivobeto {
-      margin-top: 500px; }
+      margin-top: 100px; }
   .video2 {
     width: 100%; }
     .video2 .video1 {
@@ -338,9 +327,7 @@ footer {
     width: 100%;
     margin-bottom: 10px; }
   .gridcontainer {
-    display: grid;
-    grid-template-rows: 20vh 85vh 30vh 10vh;
-    grid-template-areas: "header" "main" "section" "footer"; }
+    grid-template-rows: 20vh 85vh 30vh 10vh; }
   img.whatsapp {
     bottom: 3px;
     right: 5px;
@@ -350,7 +337,7 @@ footer {
     font-size: 22px; }
   /*historia */
   .grid1 {
-    grid-template-rows: 30vh 60vh 10vh; }
+    grid-template-rows: 25vh 60vh 10vh; }
     .grid1 .mainhistoria {
       padding-top: 10px; }
       .grid1 .mainhistoria .historia1 .imglocal {
@@ -361,11 +348,11 @@ footer {
     width: 350px;
     height: 350px; }
   .grid2 {
-    grid-template-rows: 30vh 90vh 10vh; }
+    grid-template-rows: 25vh 90vh 10vh; }
   .grid3 {
-    grid-template-rows: 30vh 80vh 10vh; }
+    grid-template-rows: 25vh 80vh 10vh; }
   .grid4 {
-    grid-template-rows: 30vh 110vh 10vh; } }
+    grid-template-rows: 25vh 110vh 10vh; } }
 
 @media (max-width: 400px) {
   .grid4 {

@@ -1,4 +1,13 @@
 @media (max-width:1000px){
+    .audioobjetivo{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .objetivofrase{
+            font-size: 10px;
+            /* font-family: 'Dancing Script', cursive;  no funciona el cursive a pesar de sacarlo de google*/
+        }
+
+
  img.whatsapp{
         width: 60px;
         height: 60px;
@@ -36,4 +45,5 @@
          grid-template-rows: 10vh 80vh 10vh;
      }
     }
+}
 }
