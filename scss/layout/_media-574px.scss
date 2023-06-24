@@ -13,39 +13,39 @@
         }
     }
     }
+    // index
+    .medioindex{
     .imgfrase{
-    flex-direction: column;
-    width: 100%;
-        align-items: center;
+        width: 120%;
         .objetivobeto{
-            width: 20%;
-            height: 20%;
             margin-top: 10px;
+            .objetivofrase{
+                width: 95%;
+audio{
+    width: 10%;
+
+                }
         }
-        .objetivofrase{
-            font-weight: 80;
-            font-size: 30px;
-    }
+        }
+}
     }
 .video1{
     margin-top: 5px;
     width: 100%;
     margin-bottom: 10px;
     } 
-    .gridcontainer{
-        grid-template-rows: 20vh 85vh 30vh 10vh;
-    }
-
     img.whatsapp{
-        bottom: 3px;
-        right: 5px;
         width: 50px;
         height: 50px;
     } 
-
     .berazategui{
         font-size: 22px;
     }
+    .gridcontainer{
+        grid-template-rows: 25vh 87vh 20vh 10vh;
+    }
+
+
     /*historia */
     .grid1{
         grid-template-rows: 25vh 60vh 10vh;

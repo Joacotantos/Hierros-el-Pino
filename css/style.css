@@ -80,53 +80,42 @@ header {
   padding-top: 10px;
   color: white; }
 
-.mainhistoria {
+.mainhistoria, .mainservicios, .mainproducto {
   grid-area: main;
   margin: 10px 5px 10px 5px;
   border: solid green 5px;
   padding: 5px 5px 5px 5px;
   background-color: #fefae0; }
-  .mainhistoria .historia1 {
+  .mainhistoria .historia1, .mainservicios .historia1, .mainproducto .historia1 {
     display: flex;
     margin-bottom: 20px;
     align-items: center; }
-    .mainhistoria .historia1 .imglocal {
+    .mainhistoria .historia1 .imglocal, .mainservicios .historia1 .imglocal, .mainproducto .historia1 .imglocal {
       width: 50%; }
-  .mainhistoria .historia2 {
+  .mainhistoria .historia2, .mainservicios .historia2, .mainproducto .historia2 {
     display: flex;
     align-items: center; }
-    .mainhistoria .historia2 .imgoficina {
+    .mainhistoria .historia2 .imgoficina, .mainservicios .historia2 .imgoficina, .mainproducto .historia2 .imgoficina {
       width: 50%; }
-    .mainhistoria .historia2 .cuento2 {
+    .mainhistoria .historia2 .cuento2, .mainservicios .historia2 .cuento2, .mainproducto .historia2 .cuento2 {
       padding-left: 5px; }
 
-.mainservicios {
-  grid-area: main;
-  margin: 10px 5px 10px 5px;
-  border: solid green 5px;
-  padding: 5px 5px 5px 5px;
-  background-color: #fefae0;
-  grid-area: main; }
-  .mainservicios h2 {
-    font-size: 40px;
+.mainservicios h2 {
+  font-size: 40px;
+  text-align: center; }
+
+.mainservicios .domicilio {
+  text-align: center; }
+  .mainservicios .domicilio h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center; }
-  .mainservicios .domicilio {
-    text-align: center; }
-    .mainservicios .domicilio h3 {
-      font-size: 30px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      text-align: center; }
-    .mainservicios .domicilio p {
-      font-size: 15px;
-      margin-bottom: 10px; }
+  .mainservicios .domicilio p {
+    font-size: 15px;
+    margin-bottom: 10px; }
 
 .mainproducto {
-  grid-area: main;
-  margin: 10px 5px 10px 5px;
-  border: solid green 5px;
-  padding: 5px 5px 5px 5px;
-  background-color: #fefae0;
   text-align: center; }
   .mainproducto .sectionmusica {
     font-size: 30px;
@@ -192,7 +181,7 @@ footer {
 
 .gridcontainer {
   display: grid;
-  grid-template-rows: 10vh 120vh 20vh 10vh;
+  grid-template-rows: 9vh 120vh 20vh 10vh;
   grid-template-areas: "header" "main" "section" "footer"; }
 
 .grid1 {
@@ -218,54 +207,51 @@ footer {
 @media (max-width: 1235px) {
   header nav ul a {
     font-size: 25px; }
-  .audioobjetivo {
+  .medioindex .imgfrase .audioobjetivo {
     width: 70%; }
-    .audioobjetivo .objetivofrase {
+    .medioindex .imgfrase .audioobjetivo .objetivofrase {
       font-weight: 80;
       font-size: 40px;
       /* font-family: 'Dancing Script', cursive;  no funciona el cursive a pesar de sacarlo de google*/ }
   .berazategui {
     font-size: 30px; }
   .gridcontainer {
-    grid-template-rows: 10vh 140vh 20vh 10vh; } }
+    grid-template-rows: 10vh 120vh 20vh 10vh; } }
 
 @media (max-width: 1000px) {
-  .audioobjetivo {
-    margin-top: 10px;
+  .medioindex .video2 .video1 {
+    height: 400px;
+    margin-top: 45px; }
+  img.whatsapp {
+    width: 60px;
+    height: 60px; }
+  .sectionproductos h2 {
     margin-bottom: 10px; }
-    .audioobjetivo .objetivofrase {
-      font-size: 10px;
-      /* font-family: 'Dancing Script', cursive;  no funciona el cursive a pesar de sacarlo de google*/ }
-    .audioobjetivo img.whatsapp {
-      width: 60px;
-      height: 60px; }
-    .audioobjetivo .sectionproductos h2 {
-      margin-bottom: 10px; }
-    .audioobjetivo .sectionproductos ul h3 {
-      font-size: 30px;
-      font-family: 'Caprasimo', cursive;
-      padding-top: 10px; }
-    .audioobjetivo .sectionproductos ul li {
-      font-size: 20px; }
-    .audioobjetivo .formulario {
-      padding-top: 10px;
-      justify-content: center; }
-      .audioobjetivo .formulario form fieldset legend {
-        font-size: 15px; }
-      .audioobjetivo .formulario form fieldset label {
-        font-size: 15px; }
-      .audioobjetivo .formulario .grid4 {
-        grid-template-rows: 10vh 80vh 10vh; } }
+  .sectionproductos ul h3 {
+    font-size: 30px;
+    font-family: 'Caprasimo', cursive;
+    padding-top: 10px; }
+  .sectionproductos ul li {
+    font-size: 20px; }
+  .formulario {
+    padding-top: 10px;
+    justify-content: center; }
+    .formulario form fieldset legend {
+      font-size: 15px; }
+    .formulario form fieldset label {
+      font-size: 15px; }
+  .grid4 {
+    grid-template-rows: 10vh 80vh 10vh; }
+  .gridcontainer {
+    grid-template-rows: 9vh 100vh 20vh 10vh; } }
 
 @media (max-width: 768px) {
   /*vista tablet*/
-  .imgfrase {
+  .medioindex .imgfrase .audioobjetivo .objetivofrase {
+    font-size: 25px; }
+  .medioindex .video2 {
     width: 100%; }
-    .imgfrase .objetivobeto {
-      margin-top: 100px; }
-  .video2 {
-    width: 100%; }
-    .video2 .video1 {
+    .medioindex .video2 .video1 {
       margin-top: 15px;
       width: 100%;
       height: 400px;
@@ -282,8 +268,6 @@ footer {
     .historia2 .imgoficina {
       width: 70%;
       margin-top: 10px; }
-  .grid2 {
-    grid-template-rows: 10vh 90vh 10vh; }
   .video3 {
     width: 90%; }
   .maincontacto .atencion h2 {
@@ -296,7 +280,9 @@ footer {
     font-size: 25px;
     padding-top: 10px; }
   .sectionproductos ul li {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .grid2 {
+    grid-template-rows: 10vh 90vh 10vh; } }
 
 @media (max-width: 574px) {
   /*vista mobile s*/
@@ -311,38 +297,33 @@ footer {
       header nav ul a {
         padding-top: 3px;
         padding-bottom: 3px; }
-  .imgfrase {
-    flex-direction: column;
-    width: 100%;
-    align-items: center; }
-    .imgfrase .objetivobeto {
-      width: 20%;
-      height: 20%;
+  .medioindex .imgfrase {
+    width: 120%; }
+    .medioindex .imgfrase .objetivobeto {
       margin-top: 10px; }
-    .imgfrase .objetivofrase {
-      font-weight: 80;
-      font-size: 30px; }
+      .medioindex .imgfrase .objetivobeto .objetivofrase {
+        width: 95%; }
+        .medioindex .imgfrase .objetivobeto .objetivofrase audio {
+          width: 10%; }
   .video1 {
     margin-top: 5px;
     width: 100%;
     margin-bottom: 10px; }
-  .gridcontainer {
-    grid-template-rows: 20vh 85vh 30vh 10vh; }
   img.whatsapp {
-    bottom: 3px;
-    right: 5px;
     width: 50px;
     height: 50px; }
   .berazategui {
     font-size: 22px; }
+  .gridcontainer {
+    grid-template-rows: 25vh 87vh 20vh 10vh; }
   /*historia */
   .grid1 {
     grid-template-rows: 25vh 60vh 10vh; }
-    .grid1 .mainhistoria {
+    .grid1 .mainhistoria, .grid1 .mainservicios, .grid1 .mainproducto {
       padding-top: 10px; }
-      .grid1 .mainhistoria .historia1 .imglocal {
+      .grid1 .mainhistoria .historia1 .imglocal, .grid1 .mainservicios .historia1 .imglocal, .grid1 .mainproducto .historia1 .imglocal {
         width: 70%; }
-      .grid1 .mainhistoria .historia2 .imgoficina {
+      .grid1 .mainhistoria .historia2 .imgoficina, .grid1 .mainservicios .historia2 .imgoficina, .grid1 .mainproducto .historia2 .imgoficina {
         width: 70%; }
   .video3 {
     width: 350px;
@@ -355,5 +336,7 @@ footer {
     grid-template-rows: 25vh 110vh 10vh; } }
 
 @media (max-width: 400px) {
+  .gridcontainer {
+    grid-template-rows: 25vh 87vh 25vh 10vh; }
   .grid4 {
     grid-template-rows: 30vh 135vh 10vh; } }

@@ -1,10 +1,12 @@
 @media (max-width:768px){  /*vista tablet*/
-
+    // index
+.medioindex{
         .imgfrase{
-            width: 100%;
-            .objetivobeto{
-                margin-top: 100px;
-            }
+            .audioobjetivo{
+                .objetivofrase{
+                    font-size: 25px;
+                }
+                }
         }
         .video2{
                 width: 100%;
@@ -16,8 +18,8 @@
                     margin-left: 5px;
                     }
             }
-        
-        /*historia*/
+}
+/*historia*/
         .historia1{
             flex-direction: column;
             .imglocal{
@@ -33,12 +35,10 @@
             }
         }
     
-    .grid2{
-        grid-template-rows: 10vh 90vh 10vh;
-    }
     .video3{
         width: 90%;
     }
+    // contacto
     .maincontacto{
     .atencion{
         h2{
@@ -63,5 +63,8 @@
         font-size: 17px;
         }
             }
+        }
+        .grid2{
+            grid-template-rows: 10vh 90vh 10vh;
         }
 }

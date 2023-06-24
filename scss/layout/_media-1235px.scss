@@ -3,6 +3,8 @@
     header nav ul a{
 font-size: 25px;
  }
+ .medioindex{
+.imgfrase{
 .audioobjetivo{
     width: 70%;
         .objetivofrase{
@@ -11,12 +13,14 @@ font-size: 25px;
             /* font-family: 'Dancing Script', cursive;  no funciona el cursive a pesar de sacarlo de google*/ 
         }
     }
+}
+    }
     .berazategui{
         font-size: 30px;
     }
 
 .gridcontainer{
-    grid-template-rows: 10vh 140vh 20vh 10vh;
+    grid-template-rows: 10vh 120vh 20vh 10vh;
 }
 }
 

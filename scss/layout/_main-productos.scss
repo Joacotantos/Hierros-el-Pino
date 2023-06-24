@@ -1,9 +1,5 @@
 .mainproducto{
-    grid-area: main;
-    margin: 10px 5px 10px 5px;
-    border: solid green 5px;
-    padding: 5px 5px 5px 5px;
-    background-color: $color-main;
+@extend .mainhistoria;
     text-align: center;
     .sectionmusica{
         font-size: 30px;
@@ -45,5 +41,4 @@ fieldset{
 }
 }
 }
-
 }

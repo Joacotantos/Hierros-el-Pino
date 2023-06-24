@@ -1,4 +1,8 @@
 @media (max-width:400px){
+    .gridcontainer{
+        grid-template-rows: 25vh 87vh 25vh 10vh;
+    }
+
      .grid4{
          grid-template-rows: 30vh 135vh 10vh;
      }
