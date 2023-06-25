@@ -1,8 +1,5 @@
-@mixin grid{
+@mixin grid($templaterows, $areas) {
     display: grid;
-    grid-template-rows: 9vh 80vh 10vh;
-grid-template-areas: 
-"header"
-"main"
-"footer";
-}
+    grid-template-rows: #{$templaterows};
+    grid-template-areas: #{$areas};
+  }

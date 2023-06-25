@@ -36,20 +36,26 @@ grid-template-areas:
 "section"
 "footer";
 }
-.grid1{
-@include grid
-}
+.grid1 {
+    @include grid(9vh 81vh 10vh, 
+    '"header"
+    "main"
+    "footer"');
+  }
 .grid2{
-@include grid
+@include grid(9vh 81vh 10vh, 
+'"header"
+ "main" 
+ "footer"');
 }
 .grid3{
-@include grid
+@include grid(9vh 81vh 10vh, '"header"
+ "main"
+ "footer"');
 }
 .grid4{
-    display: grid;
-    grid-template-rows: 9vh 100vh 10vh;
-grid-template-areas: 
-"header"
-"main"
-"footer";
-    }
+    @include grid(9vh 100vh 10vh, 
+    '"header"
+    "main"
+    "footer"');
+  }

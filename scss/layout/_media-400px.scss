@@ -1,9 +1,22 @@
 @media (max-width:400px){
+    .medioindex{
+        .imgfrase{
+            .audioobjetivo{
+                
+                    audio{
+                    width: 190px;
+                    height: 30px;
+                    }
+            
+                }}
+            }
+      
     .gridcontainer{
-        grid-template-rows: 25vh 87vh 25vh 10vh;
+        grid-template-rows: 25vh 100vh 25vh 10vh;
     }
 
      .grid4{
          grid-template-rows: 30vh 135vh 10vh;
      }
     }
+

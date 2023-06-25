@@ -16,19 +16,24 @@
     // index
     .medioindex{
     .imgfrase{
-        width: 120%;
+        width: 100%;
         .objetivobeto{
             margin-top: 10px;
+        }
+        .audioobjetivo{
             .objetivofrase{
                 width: 95%;
-audio{
-    width: 10%;
-
+                text-align: center;
+            }
+                audio{
+                width: 220px;
+                height: 30px;
                 }
+        
         }
-        }
-}
     }
+}
+    
 .video1{
     margin-top: 5px;
     width: 100%;
